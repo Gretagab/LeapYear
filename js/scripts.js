@@ -1,15 +1,16 @@
 $(document).ready(function() {
-  $("#submit").click(function() {
-    var destination = $("#paris");
-    if ($("#temperature1").prop('checked')) {
-      destination = $("#namibia");
-    } if ($("#fancy").prop('checked') && $("#familiar").prop('checked')) {
-      destination = $("#westcoast");
-
-    } else if ($("#plane-food").prop('checked')) {
-      destination = $("#westcoast");
-    }
-
-    alert(destination.text());
+  $("form#leap-year").submit(function(event) {
+    event.preventDefault();
+    var year = parseInt($("input#year").val());
+    var result = leapYear(year);
+    $("#result").text(result);
   });
-})
+});
+
+var leapYear = function(year) {
+  if ((year % 4 ===0) && (year % 100 !==0) || (year % 400 ===0)) {
+    return true;
+  } else {
+    return false;
+  }
+};

@@ -1,18 +1,4 @@
-# QUIZ
-
-This is a project for Epicodus coding bootcamp.
-The project is Vacation Suggester. It is a website where a user can answer questions about themselves and be given a vacation destination based on their answers.
-
-## The project status
-The project has very simple logic.  Only some combinations are taken into account.
-
-## Installation
-
-Clone travel-quiz repository from GitHub to be able to run it.
-
-## Technologies
-- HTML
-- CSS
-- Bootstrap 3
-- JavaScript
-- jQuery 3.3.1
+a year that is not a leap year - 1993 - false
+a year that is divisible by four - 2004 - true
+a year that is divisible by 100 - 1900 - false
+a year that ois divisible by 400 - 2000 - true
